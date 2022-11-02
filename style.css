@@ -1,0 +1,145 @@
+main {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 336px;
+    border: 1px solid #C4C4C4;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    bottom: 0px;
+}
+
+.container__header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+    background: #FFDC40;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.container__text {
+    margin-top: 13px;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 29px;
+}
+
+.container__button_first {
+    position: absolute;
+    padding: 0px;
+    width: 150px;
+    height: 100%;
+    background: #833AE0;
+    border-radius: 71px;
+    border: 0px;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto';
+}
+
+.container__button_second {
+    position: absolute;
+    padding: 0px;
+    width: 42px;
+    height: 100%;
+    background: #9953F1;
+    border-radius: 71px;
+    border: 0px;
+    color: white;
+    right: 108px;
+}
+
+.container__todos_list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 18px;
+    width: 286px;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 10px 30px 10px 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__todos_input {
+    position: relative;
+    border-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    outline: none;
+}
+
+.container__todos_input:active, .container__todos_input:focus {
+    border-color: transparent;
+}
+
+.container__todos {
+    position: relative;
+    display: flex;
+    margin: 0px;
+}
+
+.container__button {
+    position: relative;
+    width: 150px;
+    height: 42px;
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.container__button_text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 21px;
+    width: 129px;
+    height: 100%;
+    margin: 0px;
+    
+}
+
+.container__todos_item {
+    width: 229px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.container__todos_delete {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+.container__sort {
+    position: relative;
+    width: 25px;
+    height: 15px;
+    margin: 0px;
+    padding: 0px;
+    left: 120px;
+    bottom: 11px;
+}
