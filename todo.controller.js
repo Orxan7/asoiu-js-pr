@@ -23,9 +23,8 @@ class todoController {
             else if(event.target.className=="container__todos_input"){
                 this.inputListener()
             }
-            else if(event.target.className=="container__sort"){
+            else if(event.target.className.includes("container__sort")){
                 this.sortButton()
-                console.log(1)
             }
         })
     }
@@ -42,16 +41,23 @@ class todoController {
     }
 
     sortButton(){
-
+        if(document.querySelector('.container__sort').className =="container__sort container__sort_asc")
+        {
+            document.querySelector('.container__sort').classList = 'container__sort container__sort_desc'
+            this.model.sortTodosAsc()
+        } 
+        else
+        {
+            document.querySelector('.container__sort').classList = "container__sort container__sort_asc"
+            this.model.sortTodosDesc()
+        }
     }
 
     deleteButton(event){
-        console.log(Array.from(event.parentNode.parentNode.children).indexOf(event.parentNode));
         this.model.deleteTodo(Array.from(event.parentNode.parentNode.children).indexOf(event.parentNode)+1)
     }
 
     editButton(event, eventl){
-        console.log(Array.from(event.parentNode.parentNode.children).indexOf(event.parentNode)+1,eventl)
         this.model.editTodo(Array.from(event.parentNode.parentNode.children).indexOf(event.parentNode)+1, eventl)        
     }
   }

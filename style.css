@@ -103,6 +103,10 @@ main {
     margin-bottom: 19px;
 }
 
+.container__button_text:hover, .container__button_second:hover {
+    cursor: pointer;
+}
+
 .container__button_text {
     position: absolute;
     color: white;
@@ -125,13 +129,20 @@ main {
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap:26px;
 }
 
 .container__todos_delete {
+    background-image: url('./images/Group\ 56.png');
     width: 20px;
     height: 20px;
     margin: 0px;
+    padding: 0px;
+}
+
+.container__todos_delete:hover {
+    background-image: url('./images/Group\ 70.png');
+    cursor: pointer;
 }
 
 .container__sort {
@@ -142,4 +153,48 @@ main {
     padding: 0px;
     left: 120px;
     bottom: 11px;
+    display: none;
 }
+
+.container__sort_asc {
+    display: block;
+    background-image: url('./images/Group\ 34.png');
+}
+
+.container__sort_asc:hover {
+    display: block;
+    background-image: url('./images/Group\ 73.png');
+    cursor: pointer;
+}
+
+.container__sort_desc {
+    display: block;
+    background-image: url('./images/Group\ 90.png');
+}
+
+.container__sort_desc:hover {
+    display: block;
+    background-image: url('./images/Group\ 91.png');
+    cursor: pointer;
+}
+
+
+
+/*
+.container__sort:hover {
+    cursor:pointer;
+}
+
+.container__sort_active-desc,.container__sort_passive-desc,.container__sort_active-asc {
+    display: block;
+}
+
+.container__sort_passive-asc:hover ~ .container__sort_active-asc {
+    display: block;
+    cursor:pointer;
+}
+
+.container__sort_passive-asc:hover {
+    display: none;
+}
+*/

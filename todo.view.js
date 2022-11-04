@@ -1,9 +1,7 @@
 var list = document.querySelector('.container__todos_list');
 
 class todoView {
-    constructor(){
-
-    }
+    constructor(){}
 
     showTodos(todos){
         list.innerHTML = ""
@@ -11,10 +9,9 @@ class todoView {
             let listItem = document.createElement('li');
             listItem.classList = 'container__todos_item';
             listItem.innerHTML = `<input type="text" class="container__todos_input" value="">
-            <img src="images/Group 56.png" class="container__todos_delete">`;
+            <div class="container__todos_delete"></div>`;
             listItem.querySelector('input').value = todos[i]['text'];
             list.append(listItem)
-            console.log('hello')
         }
     }
 }
