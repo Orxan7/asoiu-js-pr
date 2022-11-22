@@ -177,24 +177,3 @@ main {
     background-image: url('./images/Group\ 91.png');
     cursor: pointer;
 }
-
-
-
-/*
-.container__sort:hover {
-    cursor:pointer;
-}
-
-.container__sort_active-desc,.container__sort_passive-desc,.container__sort_active-asc {
-    display: block;
-}
-
-.container__sort_passive-asc:hover ~ .container__sort_active-asc {
-    display: block;
-    cursor:pointer;
-}
-
-.container__sort_passive-asc:hover {
-    display: none;
-}
-*/
